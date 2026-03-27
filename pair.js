@@ -733,19 +733,19 @@ case 'menu': {
       image: { url: "https://files.catbox.moe/w54zcn.jpg" },
       caption: `*ᴍɪɴɪ kirah xᴅ*\n${menuText}`,
       buttons: [
-        {
-          buttonId: `${config.PREFIX}quick_commands`,
-          buttonText: { displayText: 'MINI KIRAH XD' },
-          type: 4,
-          nativeFlowInfo: {
-            name: 'single_select',
-            paramsJson: JSON.stringify({
-              title: 'ᴍɪɴɪ kirah xᴅ ᴄᴍᴅs',
-              sections: [
                 {
-                  title: "🌐 ɢᴇɴᴇʀᴀʟ ᴄᴏᴍᴍᴀɴᴅs",
-                  highlight_label: 'ᴍɪɴɪ kirah xᴅ',
-                  rows: [
+                    buttonId: `${config.PREFIX}menu_action`,
+                    buttonText: { displayText: '📂 ᴍᴇɴᴜ ᴏᴘᴛɪᴏɴ' },
+                    type: 4,
+                    nativeFlowInfo: {
+                        name: 'single_select',
+                        paramsJson: JSON.stringify({
+                            title: 'ᴄʟɪᴄᴋ ʜᴇʀᴇ',
+                            sections: [
+                                {
+                                    title: `ᴀᴋɪɴᴅᴜ ᴍɪɴɪ`,
+                                    highlight_label: 'Quick Actions',
+                                    rows: [
                     { title: "🟢 ᴀʟɪᴠᴇ", description: "ᴄʜᴇᴄᴋ ɪғ ʙᴏᴛ ɪs ᴀᴄᴛɪᴠᴇ", id: `${config.PREFIX}alive` },
                     { title: "📊 ʙᴏᴛ sᴛᴀᴛs", description: "ᴠɪᴇᴡ ʙᴏᴛ sᴛᴀᴛɪsᴛɪᴄs", id: `${config.PREFIX}bot_stats` },
                     { title: "ℹ️ ʙᴏᴛ ɪɴғᴏ", description: "ɢᴇᴛ ʙᴏᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ", id: `${config.PREFIX}bot_info` },
